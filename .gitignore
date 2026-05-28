@@ -1,0 +1,37 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.pidb
+*.psess
+*.vspx
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+bld/
+
+# Visual Studio / Rider
+.vs/
+.idea/
+*.swp
+*.sln.ide
+
+# Secrets
+appsettings.json
+appsettings.*.json
+*.user-secrets.json
+.env
+
+# Logs
+logs/
+*.log
+
+#шаблон
+!appsettings.template.json

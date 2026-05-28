@@ -1,8 +1,33 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TaskTracker", "TaskTracker", "{33576474-B5BA-4456-9746-8B71FC229C7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{8978505A-7212-40E4-A50F-03C8F4BF2D24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{AFEA482C-5545-4A2B-93C3-BB638F00F179}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{E82E80FB-24F9-4442-917D-2A00B0CD6589}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{EBAAC4A1-8FF6-4827-A693-88409872F621}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskTracker.Host.Bot", "TaskTracker\Host\TaskTracker.Host.Bot\TaskTracker.Host.Bot.csproj", "{8EC2845C-0358-4387-98F7-754B7CE74840}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8978505A-7212-40E4-A50F-03C8F4BF2D24} = {33576474-B5BA-4456-9746-8B71FC229C7F}
+		{AFEA482C-5545-4A2B-93C3-BB638F00F179} = {33576474-B5BA-4456-9746-8B71FC229C7F}
+		{E82E80FB-24F9-4442-917D-2A00B0CD6589} = {33576474-B5BA-4456-9746-8B71FC229C7F}
+		{EBAAC4A1-8FF6-4827-A693-88409872F621} = {33576474-B5BA-4456-9746-8B71FC229C7F}
+		{8EC2845C-0358-4387-98F7-754B7CE74840} = {EBAAC4A1-8FF6-4827-A693-88409872F621}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8EC2845C-0358-4387-98F7-754B7CE74840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EC2845C-0358-4387-98F7-754B7CE74840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EC2845C-0358-4387-98F7-754B7CE74840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EC2845C-0358-4387-98F7-754B7CE74840}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
