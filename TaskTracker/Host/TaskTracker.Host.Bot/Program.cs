@@ -12,8 +12,9 @@ public class Program
         builder.Configuration.AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true);
         builder.Configuration.AddEnvironmentVariables();
             
-        var botToken = builder.Configuration["BotToken"]
-                       ?? throw new InvalidOperationException("BotToken not configured");
+        var botToken = builder.Configuration["BOT_TOKEN"]
+                       ?? builder.Configuration["BotToken"]
+                       ?? throw new InvalidOperationException("BOT_TOKEN not configured");
 
         builder.Services.AddSingleton<ITelegramBotClient>(new TelegramBotClient(botToken));
         
